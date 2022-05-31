@@ -1,0 +1,32 @@
+{
+  "changelogDate": "20220531114616",
+  "fields": [
+    {
+      "fieldName": "first_name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "last_name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Person",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "id": false,
+      "otherEntityField": "id",
+      "otherEntityName": "address",
+      "otherEntityRelationshipName": "person",
+      "ownerSide": true,
+      "relationshipName": "address",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="person">
+      <h2 data-cy="personDetailsHeading"><span jhiTranslate="testBpApp.person.detail.title">Person</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ person.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="testBpApp.person.first_name">First Name</span></dt>
+        <dd>
+          <span>{{ person.first_name }}</span>
+        </dd>
+        <dt><span jhiTranslate="testBpApp.person.last_name">Last Name</span></dt>
+        <dd>
+          <span>{{ person.last_name }}</span>
+        </dd>
+        <dt><span jhiTranslate="testBpApp.person.age">Age</span></dt>
+        <dd>
+          <span>{{ person.age }}</span>
+        </dd>
+        <dt><span jhiTranslate="testBpApp.person.address">Address</span></dt>
+        <dd>
+          <div *ngIf="person.address">
+            <a [routerLink]="['/address', person.address?.id, 'view']">{{ person.address?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/person', person.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

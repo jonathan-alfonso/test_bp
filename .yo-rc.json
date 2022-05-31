@@ -1,0 +1,57 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "test_bp",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-my-blueprint",
+        "version": "7.8.1"
+      }
+    ],
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "angularX",
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1653990185925,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "devServerPort": 4200,
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "entities": ["Address", "Person"],
+    "entitySuffix": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "7.8.1",
+    "jwtSecretKey": "N2I4NDVhNzNjODRiYjFlYTFkYjE1YjRlNTYxMmY5NzM0MmRhZTVjMjM4NTFhZWQ0NmUwZTk0NDZiMzA2ZTE1ZTVmNGJlY2NhNjhkODhmODA5ZjJkMjY2YzNjMTI4ZmI0ZmJiNjAxYmU2N2ZlMDYyNWJhZjAzMzE3MmU0ZTJmYTQ=",
+    "languages": ["fr", "en"],
+    "lastLiquibaseTimestamp": 1653997576000,
+    "messageBroker": false,
+    "nativeLanguage": "fr",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-my-blueprint",
+        "version": "7.8.1"
+      }
+    ],
+    "packageName": "com.mycompany.myapp",
+    "pages": [],
+    "prodDatabaseType": "postgresql",
+    "reactive": false,
+    "searchEngine": false,
+    "serverPort": "8080",
+    "serverSideOptions": [],
+    "serviceDiscoveryType": "no",
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "skipUserManagement": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "withAdminUi": true
+  }
+}
